@@ -164,3 +164,12 @@
         padding-left: 25px;
     }
 }
+
+@media (max-width: 400px) {
+    .news__item .news__description h2 {
+        font-size: 1.3rem; /* Уменьшаем заголовок на маленьких экранах */
+    }
+    .news__item .news__description {
+        padding: 0.8rem;
+    }
+}
