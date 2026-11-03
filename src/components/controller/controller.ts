@@ -2,7 +2,6 @@ import AppLoader from './appLoader';
 import { SourcesResponse, EverythingResponse, Callback } from '../../types';
 
 class AppController extends AppLoader {
-    // Типизируем коллбэк через дженерик из types.ts
     public getSources(callback: Callback<SourcesResponse>): void {
         super.getResp<SourcesResponse>(
             {

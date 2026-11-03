@@ -3,7 +3,6 @@ import { Article } from '../../../types';
 
 class News {
     public draw(data: Article[]): void {
-        // Если данных нет — очищаем контейнер и выходим
         if (!data || data.length === 0) {
             const newsContainer = document.querySelector('.news');
             if (newsContainer) newsContainer.innerHTML = 'No news found for this source.';
