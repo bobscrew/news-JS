@@ -37,3 +37,8 @@ export interface Callback<T> {
 export interface LoaderOptions {
   [key: string]: string;
 }
+
+export enum HttpMethod {
+    GET = 'GET',
+    POST = 'POST'
+}
