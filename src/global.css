@@ -19,14 +19,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1a1b1f; 
+    background-color: #1a1b1f;
     border-top: 1px solid #333;
     margin-top: 40px;
 }
 
 footer .copyright {
     font-size: 14px;
-    color: #aaa; 
+    color: #aaa;
     text-align: center;
     display: flex;
     align-items: center;
@@ -36,13 +36,13 @@ footer .copyright {
 }
 
 footer .copyright a {
-    color: #30c5ff; 
+    color: #30c5ff;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 footer .copyright a:hover {
-    color: #3fcc59; 
+    color: #3fcc59;
     text-decoration: underline;
 }
 

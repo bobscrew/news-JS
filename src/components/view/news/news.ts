@@ -12,7 +12,7 @@ class News {
         const news = data.length >= 10 ? data.filter((_item: Article, idx: number) => idx < 10) : data;
 
         const fragment = document.createDocumentFragment();
-        
+
         const newsItemTemp = document.querySelector('#newsItemTemp') as HTMLTemplateElement;
         if (!newsItemTemp) return;
 
@@ -23,9 +23,7 @@ class News {
 
             const photoElement = newsClone.querySelector('.news__meta-photo') as HTMLElement;
             if (photoElement) {
-                photoElement.style.backgroundImage = `url(${
-                    item.urlToImage || 'img/news_placeholder.jpg'
-                })`;
+                photoElement.style.backgroundImage = `url(${item.urlToImage || 'img/news_placeholder.jpg'})`;
             }
 
             const authorElement = newsClone.querySelector('.news__meta-author');
@@ -35,11 +33,7 @@ class News {
 
             const dateElement = newsClone.querySelector('.news__meta-date');
             if (dateElement) {
-                dateElement.textContent = item.publishedAt
-                    .slice(0, 10)
-                    .split('-')
-                    .reverse()
-                    .join('-');
+                dateElement.textContent = item.publishedAt.slice(0, 10).split('-').reverse().join('-');
             }
 
             const titleElement = newsClone.querySelector('.news__description-title');

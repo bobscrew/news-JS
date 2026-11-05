@@ -4,7 +4,7 @@ import { Source } from '../../../types';
 class Sources {
     public draw(data: Source[]): void {
         const fragment = document.createDocumentFragment();
-        
+
         const sourceItemTemp = document.querySelector('#sourceItemTemp') as HTMLTemplateElement;
         if (!sourceItemTemp) return;
 

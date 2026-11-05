@@ -2,14 +2,16 @@
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    padding: 10px 0; 
+    padding: 10px 0;
     overflow-x: auto;
     overflow-y: hidden;
     align-items: center;
-    font: 300 1em 'Fira Sans', sans-serif;
+    font:
+        300 1em 'Fira Sans',
+        sans-serif;
     box-sizing: border-box;
-    
-    scrollbar-width: thin; 
+
+    scrollbar-width: thin;
 }
 
 .sources::-webkit-scrollbar {
@@ -33,7 +35,7 @@
     color: #70d6ff;
     transition: 0.25s;
     cursor: pointer;
-    flex-shrink: 0; 
+    flex-shrink: 0;
 }
 
 .source__item:hover,
@@ -50,9 +52,9 @@
 }
 
 .sources {
-    scrollbar-width: none; 
+    scrollbar-width: none;
 }
 
 .sources::-webkit-scrollbar {
-    display: none; 
+    display: none;
 }
